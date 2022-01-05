@@ -17,6 +17,10 @@
             <a class="profile" href="rezerwacje.html">Rezerwacje</a>
             <a class="profile" href="profil.html">Mój profil</a>
         </nav>
+        <div>
+            <button id="logIn">Zaloguj się</button>
+            <button id="signIn">Zarejestruj się</button>
+        </div>
     </header>
     <section>
         <h2>O nas</h2>
@@ -27,9 +31,27 @@
         <div id="galeria">
             <!--Tutaj wrzucimy kilka zdjęć naszych samochodów-->
         </div>
+        <form class="contact">
+            <fieldset>
+                <legend>Formularz kontaktowy</legend>
+            <label for="mail">Podaj swój e-mail</label>
+            <input type="email" id="mail">
+            <label for="input2">Podaj swóje imię i nazwisko</label>
+            <input type="text" id="input2">
+            <label for="wiad">Wiadomość do nas</label>
+            <textarea id="wiad" cols=20 rows=5 placeholder="Witam, chciałbym..."></textarea>
+        </fieldset>
+        </form>
     </section>
     <footer>
-        <div class="contact"></div>
+        <div class="bot" id="authors">
+            Wykonawcy: Axel Różak, Kamil Paradowski<br>
+            email: 84977@student.ue.poznan.pl, {email kamila}
+        </div>
+        <div class="bot" id="copyright">
+            Strona jest własnością intelektualną Axela Różaka i Kamila Paradowskiego<br>
+            Materiały użyte nie są naszą własnością i nie przypisujemy do nich naszych praw
+        </div>
     </footer>
 </body>
 </html>
