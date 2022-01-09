@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="" />
     <title>Strona główna</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Nazwa biznesu</h1>
-        <nav>
-            <a href="glowna.html">Strona główna</a>
-            <a href="oferty.html">Nasza oferta</a>
-            <a class="profile" href="rezerwacje.html">Rezerwacje</a>
-            <a class="profile" href="profil.html">Mój profil</a>
-        </nav>
-        <div id="notLogIn">
-            <button id="logIn">Zaloguj się</button>
-            <button id="signIn">Zarejestruj się</button>
-        </div>
+      <h1>Nazwa biznesu</h1>
+      <nav>
+        <a href="glowna.html">Strona główna</a>
+        <a href="oferty.html">Nasza oferta</a>
+        <a class="profile" href="rezerwacje.html">Rezerwacje</a>
+        <a class="profile" href="profil.html">Mój profil</a>
+      </nav>
+      <div id="notLogIn">
+        <button id="logIn">Zaloguj się</button>
+        <button id="signIn">Zarejestruj się</button>
+      </div>
     </header>
     <section>
+      <div id="opis">
         <h2>O nas</h2>
-        <div id="opis">
-            <!-- Tutaj będzie opis naszej działalności i firmy, opisz jakie mamy samochody na stanie oraz dlaczego powstaliśmy-->
-        </div>
-        <h2>Nasze samochody</h2>
-        <div id="galeria">
-            <!--Tutaj wrzucimy kilka zdjęć naszych samochodów-->
-        </div>
-        <h2>Nasza lokalizacja i pracownicy</h2>
-        <div id="lokali">
-            <!--Tutaj wrzucimy kilka zdjęć budynku oraz jakiś randomowych ludzi -->
-        </div>
-        <form class="contact">
-            <fieldset>
-                <legend>Formularz kontaktowy</legend>
-            <label for="mail">Podaj swój e-mail</label>
-            <input type="email" id="mail">
-            <label for="input2">Podaj swóje imię i nazwisko</label>
-            <input type="text" id="input2">
-            <label for="wiad">Wiadomość do nas</label>
-            <textarea id="wiad" cols=20 rows=5 placeholder="Witam, chciałbym..."></textarea>
+        <!-- Tutaj będzie opis naszej działalności i firmy, opisz jakie mamy samochody na stanie oraz dlaczego powstaliśmy-->
+        <p class="opis"></p>
+      </div>
+      <div id="galeria">
+      <h2>Nasze samochody</h2>
+      
+        <!--Tutaj wrzucimy kilka zdjęć naszych samochodów-->
+      </div>
+      <div id="lokali"></div>
+      <h2>Nasza lokalizacja i pracownicy</h2>
+        <!--Tutaj wrzucimy kilka zdjęć budynku oraz jakiś randomowych ludzi -->
+      </div>
+      <form class="contact">
+        <fieldset>
+          <legend>Formularz kontaktowy</legend>
+          <label for="mail">Podaj swój e-mail</label>
+          <input type="email" id="mail" />
+          <label for="input2">Podaj swóje imię i nazwisko</label>
+          <input type="text" id="input2" />
+          <label for="wiad">Wiadomość do nas</label>
+          <textarea
+            id="wiad"
+            cols="20"
+            rows="5"
+            placeholder="Witam, chciałbym..."
+          ></textarea>
+          <input type="submit" value="Wyślij" id="kontakt" />
         </fieldset>
-        </form>
+      </form>
     </section>
     <footer>
-        <div class="bot" id="authors">
-            Wykonawcy: Axel Różak, Kamil Paradowski<br>
-            email: 84977@student.ue.poznan.pl, {email kamila}
-        </div>
-        <div class="bot" id="copyright">
-            Strona jest własnością intelektualną Axela Różaka i Kamila Paradowskiego<br>
-            Materiały użyte nie są naszą własnością i nie przypisujemy do nich naszych praw
-        </div>
+      <div class="bot" id="authors">
+        Wykonawcy: Axel Różak, Kamil Paradowski<br />
+        email: 84977@student.ue.poznan.pl, {email kamila}
+      </div>
+      <div class="bot" id="copyright">
+        Strona jest własnością intelektualną Axela Różaka i Kamila
+        Paradowskiego<br />
+        Materiały użyte nie są naszą własnością i nie przypisujemy do nich
+        naszych praw
+      </div>
     </footer>
-</body>
+  </body>
 </html>
