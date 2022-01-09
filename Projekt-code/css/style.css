@@ -38,7 +38,6 @@ footer {
   display: flex;
   justify-content: space-around;
   height: 20%;
-  width: 100%;
 }
 .bot {
   border: 1px solid black;
