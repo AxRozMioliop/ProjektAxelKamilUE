@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="" />
     <title>Strona główna</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="glowna.html">Strona główna</a>
-            <a href="oferty.html">Nasza oferta</a>
-            <a class="profile" href="rezerwacje.html">Rezerwacje</a>
-            <a class="profile" href="profil.html">Mój profil</a>
-        </nav>
+      <h1>Nazwa biznesu</h1>
+      <nav>
+        <a href="glowna.html">Strona główna</a>
+        <a href="oferty.html">Nasza oferta</a>
+        <a id="link1" class="profile" href="rezerwacje.html">Rezerwacje</a>
+        <a id="link2" class="profile" href="profil.html">Mój profil</a>
+      </nav>
+      <div id="loggedIn">
+        <button id="logOut">Wyloguj</button>
+      </div>
     </header>
     <section>
-
+      <fieldset>
+        <legend>Twój profil</legend>
+        Imię: <p id="imieProfil"></p>
+        <br />
+        Nazwisko: <p id="nazwiskoProfil"></p>
+        <br />
+        email: <p id="emailProfil"></p>
+        <br />
+        Data zarejestrowania: <p id="dataProfil"></p>
+      </fieldset>
+      <fieldset>
+          <legend>Twoje rezerwacje</legend>
+          <ul id="rezerwacje lista"></ul>
+      </fieldset>
     </section>
     <footer>
-
+      <div class="bot" id="authors">
+        Wykonawcy: Axel Różak, Kamil Paradowski<br />
+        email: 84977@student.ue.poznan.pl, {email kamila}
+      </div>
+      <div class="bot" id="copyright">
+        Strona jest własnością intelektualną Axela Różaka i Kamila
+        Paradowskiego<br />
+        Materiały użyte nie są naszą własnością i nie przypisujemy do nich
+        naszych praw
+      </div>
     </footer>
-</body>
+  </body>
+  <script src="../js/skrypt.js">
+  </script>
 </html>

@@ -1,3 +1,72 @@
-body{
-    background-color: aqua;
+body {
+  background-color: aqua;
+}
+.profile {
+  display: none;
+}
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
+header {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  background-color: gray;
+}
+section {
+  height: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  padding: 10px;
+  background-color:rgb(57, 156, 148);
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+}
+.bot {
+  border: 1px solid black;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(45, 134, 218);
+}
+form > fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-self: center;
+}
+#kontakt{
+  width: 70px;
+  align-self: center;
+}
+#ofertyGrid{
+  display: grid;
+  grid-gap: 10px 20px;
+  grid-template-columns: 45% 45%;
+  padding: 10px;
+}
+#ofertyTitle{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
 }

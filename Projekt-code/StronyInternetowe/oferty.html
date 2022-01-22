@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="" />
     <title>Strona główna</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="glowna.html">Strona główna</a>
-            <a href="oferty.html">Nasza oferta</a>
-            <a class="profile" href="rezerwacje.html">Rezerwacje</a>
-            <a class="profile" href="profil.html">Mój profil</a>
-        </nav>
+      <h1>Nazwa biznesu</h1>
+      <nav>
+        <a href="glowna.html">Strona główna</a>
+        <a href="oferty.html">Nasza oferta</a>
+        <a id="link1" class="profile" href="rezerwacje.html">Rezerwacje</a>
+        <a id="link2" class="profile" href="profil.html">Mój profil</a>
+      </nav>
+      <div id="notLogIn">
+        <button id="logIn">Zaloguj się</button>
+        <button id="signIn">Zarejestruj się</button>
+      </div>
     </header>
-    <section>
-
+    <section id="ofertyGrid">
+      <h2 id="ofertyTitle">Nasze oferty</h2>
+      <div id="oferta1">
+          <h3>Oferta 1</h3>
+          <p id="zawartosc1">Coś o ofercie 1</p>
+      </div>
+      <div id="oferta2">
+          <h3>Oferta 2</h3>
+          <p id="zawartosc2">Coś o ofercie 2</p>
+      </div>
+      <div id="oferta3">
+          <h3>Oferta 3</h3>
+          <p id="zawartosc3">Coś o ofercie 3</p>
+      </div>
+      <div id="oferta4">
+          <h3>Oferta 4</h3>
+          <p id="zawartosc4">Coś o ofercie 4</p>
+      </div>
     </section>
     <footer>
-
+      <div class="bot" id="authors">
+        Wykonawcy: Axel Różak, Kamil Paradowski<br />
+        email: 84977@student.ue.poznan.pl, {email kamila}
+      </div>
+      <div class="bot" id="copyright">
+        Strona jest własnością intelektualną Axela Różaka i Kamila
+        Paradowskiego<br />
+        Materiały użyte nie są naszą własnością i nie przypisujemy do nich
+        naszych praw
+      </div>
     </footer>
-</body>
+  </body>
+  <script src="../js/skrypt.js">
+  </script>
 </html>
