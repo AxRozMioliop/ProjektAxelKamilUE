@@ -14,9 +14,11 @@ document.getElementById('imieProfil').innerText += ' ' + imieUzytk;
 document.getElementById('nazwiskoProfil').innerText += ' ' + nazwiskoUzytk;
 document.getElementById('emailProfil').innerText += ' ' + emailUzytk;
 document.getElementById('dataProfil').innerText += ' ' + dataRejestracji;
+
 function wyloguj() {
   window.localStorage.setItem('loggedIn', 'nie');
   window.location.href = 'glowna.html';
+  alert("Wylogowano!");
 }
 document.getElementById('logOut').addEventListener('click', wyloguj);
 

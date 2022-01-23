@@ -7,20 +7,13 @@ if (!window.localStorage.getItem('rezerwacje')) {
 
 let rezBut = document.getElementsByClassName('rezerw');
 let link = document.getElementsByTagName('a');
-let tableCell = document.getElementsByTagName('td');
 
 document.getElementById('logOut').addEventListener('click', wyloguj);
-
-if (wynikOstateczny == []) {
-  for (let i = 0; i < tableCell.length; i++) {
-    tableCell[i].classList.remove('color');
-  }
-}
 
 for (let i = 0; i < rezBut.length; i++) {
   rezBut[i].addEventListener('click', function () {
     if (wynikOstateczny.length == 10) {
-      alert('Nie możesz już więcej rezerwować!');
+      alert('Nie możesz mieć więcej rezerwacji niż 10!');
     } else {
       let y = rezBut[i].innerText;
       let juzRezerwacja = false;
@@ -36,7 +29,6 @@ for (let i = 0; i < rezBut.length; i++) {
           wynikOstateczny.push(y);
           alert('Zarezerwowano termin');
           rezBut[i].parentElement.classList.add('color');
-          console.log(wynikOstateczny);
         } else {
           alert('Nie zarezerwowano terminu');
         }
@@ -56,4 +48,5 @@ function koniecRez() {
 function wyloguj() {
   window.localStorage.setItem('loggedIn', 'nie');
   window.location.href = 'glowna.html';
+  alert("Wylogowano!");
 }

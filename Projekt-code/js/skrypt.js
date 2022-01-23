@@ -92,6 +92,7 @@ function wyloguj() {
   window.localStorage.setItem('loggedIn', "nie");
   revertButtons();
   window.location.reload();
+  alert("Wylogowano!");
 }
 if (zalogowany=="nie") {
   document.getElementById('link1').classList.add('profile');
