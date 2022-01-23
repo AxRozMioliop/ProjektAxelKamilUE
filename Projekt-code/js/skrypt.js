@@ -2,7 +2,6 @@ let imieUzytk = window.localStorage.getItem('name');
 let nazwiskoUzytk = window.localStorage.getItem('surname');
 let emailUzytk = window.localStorage.getItem('email');
 let hasloUzytk = window.localStorage.getItem('password');
-let rezerwacjeUzytk = [];
 let dataRejestracji = window.localStorage.getItem('date');
 let zalogowany = window.localStorage.getItem('loggedIn');
 let zmienna1;
