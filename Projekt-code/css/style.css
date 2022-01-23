@@ -1,6 +1,17 @@
 body {
   background-color: aqua;
 }
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:visited{
+  text-decoration: none;
+  color: #000;
+}
+a:hover{
+  color: aqua;
+}
 .profile {
   display: none;
 }
@@ -25,7 +36,6 @@ nav {
   background-color: gray;
 }
 section {
-  height: 1000px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -38,6 +48,9 @@ footer {
   display: flex;
   justify-content: space-around;
   height: 20%;
+}
+.contact{
+  padding: 20px;
 }
 .bot {
   border: 1px solid black;
@@ -70,6 +83,11 @@ form > fieldset {
   grid-column-end: 3;
   text-align: center;
 }
+#oferta1, #oferta2, #oferta3, #oferta4{
+  border: 1px solid black;
+  height: 200px;
+  text-align: center;
+}
 td, th{
   width: 100px;
   height: 100px;
@@ -84,10 +102,106 @@ td{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 th{
   background-color: tomato;
 }
 .color{
   background-color: violet;
+}
+.mainP{
+  width: 100%;
+}
+.sideP{
+  width: 100%;
+  height: 200px;
+}
+.container {
+  box-sizing: border-box;
+position: relative;
+grid-area: cont;
+}
+
+.mySlides {
+display: none;
+}
+.mySlides > img{
+  height: 505px;
+}
+
+.cursor {
+cursor: pointer;
+}
+
+
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+.column {
+float: left;
+width: 25%;
+}
+
+
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+hr.solid {
+  border-top: 3px solid rgb(0, 0, 0);
+  width: 100%;
 }
