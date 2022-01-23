@@ -1,15 +1,39 @@
 body {
   background-color: aqua;
 }
+a {
+  text-decoration: none;
+  color: #000;
+  border: 1px dashed rgb(26, 204, 49);
+  width: 120px;
+  height: 70;
+  text-align: center;
+}
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: aqua;
+}
+span {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+span > img{
+  width: 40%;
+}
 .profile {
   display: none;
 }
 header div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
 }
+
 header {
   height: 20%;
   display: flex;
@@ -25,7 +49,6 @@ nav {
   background-color: gray;
 }
 section {
-  height: 60%;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -34,10 +57,13 @@ section {
 }
 footer {
   padding: 10px;
-  background-color:rgb(57, 156, 148);
+  background-color: rgb(57, 156, 148);
   display: flex;
   justify-content: space-around;
   height: 20%;
+}
+.contact {
+  padding: 20px;
 }
 .bot {
   border: 1px solid black;
@@ -55,18 +81,137 @@ form > fieldset {
   width: 300px;
   justify-self: center;
 }
-#kontakt{
+#kontakt {
   width: 70px;
   align-self: center;
 }
-#ofertyGrid{
+#ofertyGrid {
   display: grid;
   grid-gap: 10px 20px;
   grid-template-columns: 45% 45%;
   padding: 10px;
 }
-#ofertyTitle{
+#ofertyTitle {
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
+}
+#oferta1,
+#oferta2,
+#oferta3,
+#oferta4 {
+  border: 1px solid black;
+  height: 200px;
+  text-align: center;
+}
+td,
+th {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+td {
+  background-color: white;
+  margin: auto;
+}
+.rezerw {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+th {
+  background-color: tomato;
+}
+.color {
+  background-color: violet;
+}
+.mainP {
+  width: 100%;
+}
+.sideP {
+  width: 100%;
+  height: 200px;
+}
+.container {
+  box-sizing: border-box;
+  position: relative;
+  grid-area: cont;
+}
+
+.mySlides {
+  display: none;
+}
+.mySlides > img {
+  height: 505px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+hr.solid {
+  border-top: 3px solid rgb(0, 0, 0);
+  width: 100%;
 }

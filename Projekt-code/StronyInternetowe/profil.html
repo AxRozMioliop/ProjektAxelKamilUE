@@ -5,36 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="" />
+    <link rel="icon" href="../../Projekt-img/Logo.jpg" />
+    <style>
+      section {
+        flex-direction: row;
+      }
+      #rezerwacje,
+      #profileView, #ustawienia {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #profileView{
+        align-items: flex-start;
+        justify-content: center;
+      }
+      #ustawienia > button{
+        width: 200px;
+      }
+      #ustawienia{
+        justify-content: space-around;
+      }
+      li{
+        width: 75px;
+      }
+    </style>
     <title>Strona główna</title>
   </head>
   <body>
     <header>
-      <h1>Nazwa biznesu</h1>
+      <span >
+        <h1>Rent Vintage Car</h1><img  src="../../Projekt-img/Logo.jpg">
+      </span>
       <nav>
         <a href="glowna.html">Strona główna</a>
         <a href="oferty.html">Nasza oferta</a>
-        <a id="link1" class="profile" href="rezerwacje.html">Rezerwacje</a>
-        <a id="link2" class="profile" href="profil.html">Mój profil</a>
+        <a id="link1" href="rezerwacje.html">Rezerwacje</a>
+        <a id="link2" href="profil.html">Mój profil</a>
       </nav>
       <div id="loggedIn">
-        <button id="logOut">Wyloguj</button>
+        <button id="logOut">Wyloguj się</button>
       </div>
     </header>
-    <section>
-      <fieldset>
+    <section style="height: 500px">
+      <fieldset id="profileView">
         <legend>Twój profil</legend>
-        Imię: <p id="imieProfil"></p>
-        <br />
-        Nazwisko: <p id="nazwiskoProfil"></p>
-        <br />
-        email: <p id="emailProfil"></p>
-        <br />
-        Data zarejestrowania: <p id="dataProfil"></p>
+        <p id="imieProfil">Imię:</p>
+        <p id="nazwiskoProfil">Nazwisko:</p>
+        <p id="emailProfil">email:</p>
+        <p id="dataProfil">Data zarejestrowania:</p>
       </fieldset>
-      <fieldset>
-          <legend>Twoje rezerwacje</legend>
-          <ul id="rezerwacje lista"></ul>
+      <fieldset id="rezerwacje">
+        <legend>Twoje rezerwacje</legend>
+        <ul id="rezerwacje lista"></ul>
+      </fieldset>
+      <fieldset id="ustawienia">
+        <legend>Ustawienia</legend>
+        <button id="deleteProfil">Usuń profil</button>
+        <button id="deleteRez">Usuń rezerwacje</button>
+        <button id="changePass">Zmień hasło</button>
       </fieldset>
     </section>
     <footer>
@@ -50,6 +82,5 @@
       </div>
     </footer>
   </body>
-  <script src="../js/skrypt.js">
-  </script>
+  <script src="../js/skrypt2.js"></script>
 </html>
