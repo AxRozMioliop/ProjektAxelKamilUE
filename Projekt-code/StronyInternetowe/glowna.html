@@ -23,22 +23,60 @@
       </div>
     </header>
     <section>
+      <h2>O nas</h2>
       <div id="opis">
-        <h2>O nas</h2>
         Nasza wypożyczalnia powstała z potrzeby obecnej na rynku. Zauważyliśmy, że mimo dużej oferty aut zabytkowych w okolicach Poznania to rynek wciąż nie jest nasycony.
               Dlatego też postanowiliśmy założyć wypożyczalnie. Posiadamy w naszej ofercie 4 zabytkowe samochody. Każdy samochód jest niepowtarzalny z uwagi na jego wyposażenie
               i radość jaką daje kierowcy, pasażerom, a także przechodniom. Nasze pojazdy można zobaczyć także na różnego rodzaju zlotach aut zabytkowych, gdzie każdy może je 
               obejrzeć i zrobić zdjęcie, co jest promocją naszej działalności.
         <p class="opis"></p>
       </div>
-      <div id="galeria">
       <h2>Nasze samochody</h2>
+      <div id="galeria" class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+            <img src="../../Projekt-img/mustang.jpg" class="mainP">
+        </div>
       
-        <!--Tutaj wrzucimy kilka zdjęć naszych samochodów-->
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+            <img src="../../Projekt-img/ford_galaxy2.jpg" class="mainP">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+            <img src="../../Projekt-img/volvo.jpg" class="mainP">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+            <img src="../../Projekt-img/cadillac_fleetwood.jpg" class="mainP">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor sideP" src="../../Projekt-img/mustang.jpg" onclick="currentSlide(1)" alt="Ford Mustang">
+          </div>
+          <div class="column">
+            <img class="demo cursor sideP" src="../../Projekt-img/ford_galaxy2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ford Galaxy">
+          </div>
+          <div class="column">
+            <img class="demo cursor sideP" src="../../Projekt-img/volvo.jpg" style="width:100%" onclick="currentSlide(3)" alt="Volvo P1800 S">
+          </div>
+          <div class="column">
+            <img class="demo cursor sideP" src="../../Projekt-img/cadillac_fleetwood.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cadillac Fleetwood">
+          </div>
+        </div>
       </div>
       <div id="lokali"></div>
       <h2>Nasza lokalizacja i pracownicy</h2>
-        <!--Tutaj wrzucimy kilka zdjęć budynku oraz jakiś randomowych ludzi -->
+        
       </div>
       <form class="contact">
         <fieldset>
