@@ -25,7 +25,7 @@ nav {
   background-color: gray;
 }
 section {
-  height: 60%;
+  height: 1000px;
   padding: 10px;
   display: flex;
   justify-content: center;
