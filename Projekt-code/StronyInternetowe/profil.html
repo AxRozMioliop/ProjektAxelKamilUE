@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="" />
+    <style>
+      section {
+        flex-direction: row;
+      }
+      #rezerwacje,
+      #profileView, #ustawienia {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #profileView{
+        align-items: flex-start;
+        justify-content: center;
+      }
+      #ustawienia > button{
+        width: 200px;
+      }
+      #ustawienia{
+        justify-content: space-around;
+      }
+      li{
+        width: 75px;
+      }
+    </style>
     <title>Strona główna</title>
   </head>
   <body>
@@ -21,19 +48,24 @@
         <button id="logOut">Wyloguj się</button>
       </div>
     </header>
-    <section style="height: 500px;">
-      <fieldset>
+    <section style="height: 500px">
+      <fieldset id="profileView">
         <legend>Twój profil</legend>
-        <p id="imieProfil">Imię: </p>
-        <p id="nazwiskoProfil">Nazwisko: </p>
-        <p id="emailProfil">email: </p>
-        <p id="dataProfil">Data zarejestrowania: </p>
+        <p id="imieProfil">Imię:</p>
+        <p id="nazwiskoProfil">Nazwisko:</p>
+        <p id="emailProfil">email:</p>
+        <p id="dataProfil">Data zarejestrowania:</p>
       </fieldset>
-      <fieldset>
-          <legend>Twoje rezerwacje</legend>
-          <ul id="rezerwacje lista"></ul>
+      <fieldset id="rezerwacje">
+        <legend>Twoje rezerwacje</legend>
+        <ul id="rezerwacje lista"></ul>
       </fieldset>
-      <button id="deleteProfil">Usuń profil</button>
+      <fieldset id="ustawienia">
+        <legend>Ustawienia</legend>
+        <button id="deleteProfil">Usuń profil</button>
+        <button id="deleteRez">Usuń rezerwacje</button>
+        <button id="changePass">Zmień hasło</button>
+      </fieldset>
     </section>
     <footer>
       <div class="bot" id="authors">
@@ -48,6 +80,5 @@
       </div>
     </footer>
   </body>
-  <script src="../js/skrypt2.js">
-  </script>
+  <script src="../js/skrypt2.js"></script>
 </html>
